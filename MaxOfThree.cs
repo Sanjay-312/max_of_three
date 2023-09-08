@@ -8,7 +8,7 @@ namespace GenericsAssignment
 {
     internal class MaxOfThree
     {
-        public static float get_max(float a,float b,float c)
+        public static string get_max(string a,string b,string c)
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0 ||
                 a.CompareTo(b) >= 0 && a.CompareTo(c) > 0 ||
