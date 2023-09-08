@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace GenericsAssignment
 {
-    internal class MaxOfThree
+    internal class MaxOfThree<T> where T:IComparable
     {
-        public static T get_max<T>(T a,T b,T c) where T :IComparable
+        public T a,b,c;
+       public MaxOfThree(T a,T b,T c)
+        {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+            
+        }
+
+        public T TestMaximun() 
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0 ||
                 a.CompareTo(b) >= 0 && a.CompareTo(c) > 0 ||

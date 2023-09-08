@@ -4,14 +4,19 @@
     {
         static void Main(string[] args)
         {
-           var max_value1= MaxOfThree.get_max(30,40,50);
-            Console.WriteLine(max_value1);
 
-            var max_value2 = MaxOfThree.get_max(3.5, 4.2, 5.8);
-            Console.WriteLine(max_value2);
+            MaxOfThree<int> obj1=new MaxOfThree<int> (4,20,3);
+            var value1=obj1.TestMaximun();
+            Console.WriteLine(value1);
 
-            var max_value3 = MaxOfThree.get_max("garg","ankit","kunal");
-            Console.WriteLine(max_value3);
+            MaxOfThree<float> obj2 = new MaxOfThree<float>(3.5f, 4.5f, 6.5f);   
+            var value2 = obj2.TestMaximun();
+            Console.WriteLine(value2);
+
+            MaxOfThree<string> obj3 = new MaxOfThree<string>("sanjay", "viraj", "pavan");
+            var value3 = obj3.TestMaximun();
+            Console.WriteLine(value3);
+
         }
     }
 }
